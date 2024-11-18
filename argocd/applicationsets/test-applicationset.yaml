@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/ggorockee/devops-camping.git
       revision: HEAD
       files:
-      - path: "argocd/applications/config/dev/*-test.yaml"
+      - path: "argocd/applicationsets/config/dev/*-test.yaml"
 
   template:
     metadata:
