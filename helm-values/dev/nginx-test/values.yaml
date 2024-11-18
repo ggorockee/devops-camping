@@ -1,5 +1,5 @@
 # this is override default values
-replicaCount: 1
+replicaCount: 3
 
 service:
   type: ClusterIP
