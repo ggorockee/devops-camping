@@ -1,0 +1,7 @@
+env: dev
+project: test
+repoURL: https://charts.bitnami.com/bitnami
+chartName: nginx
+chartVersion: 18.2.5
+appname: nginx-test
+namespace: test
