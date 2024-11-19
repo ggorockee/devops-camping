@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   istio-gateway:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-11-19T23:07:13.5172978+09:00"
+    description: A Helm chart for Kubernetes
+    digest: 0b7af10af77fc5a57410ab15220472995352725b4a4ef01523f03880ee9a98eb
+    name: istio-gateway
+    type: application
+    urls:
+    - istio-gateway-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-19T22:57:58.8064272+09:00"
+    created: "2024-11-19T23:07:13.5172978+09:00"
     description: A Helm chart for Kubernetes
     digest: ab3195e02bfded21c8a5d2926e42778e2829fe5e85a4b08082a00b39949fb4e1
     name: istio-gateway
@@ -11,4 +21,4 @@ entries:
     urls:
     - istio-gateway-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-19T22:57:58.8053043+09:00"
+generated: "2024-11-19T23:07:13.5161952+09:00"
