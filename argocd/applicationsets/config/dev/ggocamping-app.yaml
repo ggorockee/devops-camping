@@ -1,0 +1,7 @@
+env: dev
+project: application
+repoURL: https://chart.ggocamping.com/devopscharts
+chartName: ggocamping-backend
+chartVersion: 1.0.0
+appname: ggocamping-backend
+namespace: ggocamping-backend
