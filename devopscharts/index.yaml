@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  ggocamping-backend:
+  - apiVersion: v2
+    appVersion: 1.23.0
+    created: "2024-11-21T17:33:57.903813+09:00"
+    description: A Helm chart for ggocamping-backend
+    digest: 548404234c2b3316dc9a925bcad6bfa9edde80ec61d377e118f5bd9831b48bf2
+    name: ggocamping-backend
+    type: application
+    urls:
+    - ggocamping-backend-1.0.0.tgz
+    version: 1.0.0
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-11-19T23:35:20.922883+09:00"
+    created: "2024-11-21T17:33:57.904092+09:00"
     description: istio-gateway for kubernetes
     digest: e2fc3eebb81263e3588a9275ea2b841fdd57dff46bea22e68df7fd06beb8c79d
     name: istio-gateway
@@ -11,4 +22,4 @@ entries:
     urls:
     - istio-gateway-1.0.0.tgz
     version: 1.0.0
-generated: "2024-11-19T23:35:20.9223328+09:00"
+generated: "2024-11-21T17:33:57.903033+09:00"
