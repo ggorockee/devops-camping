@@ -13,7 +13,7 @@ spec:
 
   template:
     metadata:
-      name: '{{appname}}'
+      name: '{{appname}}-service-mesh'
     spec:
       project: '{{project}}'
       sources:

@@ -33,7 +33,7 @@ service:
   ports:
     - port: 3000
       containerPort: 3000
-      name: http
+      name: fiber
       protocol: ''
 volumes: []
 volumeMounts: []
