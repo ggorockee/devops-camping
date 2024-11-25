@@ -17,8 +17,14 @@ deployment:
   imagePullSecrets: []
   podSecurityContext: {}
   securityContext: {}
-  livenessProbe: {}
-  readinessProbe: {}
+  livenessProbe:
+    httpGet:
+      path: /v1/healthcheck
+      port: fiber
+  readinessProbe:
+    httpGet:
+      path: /v1/healthcheck
+      port: fiber
   resources: {}
   nodeSelector: {}
   tolerations: []
