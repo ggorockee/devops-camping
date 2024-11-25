@@ -13,7 +13,7 @@ deployment:
   image:
     repository: ggorockee/camping-backend-with-go
     pullPolicy: IfNotPresent
-    tag: v-bd22ac2f
+    tag: v-05628ada
   imagePullSecrets: []
   podSecurityContext: {}
   securityContext: {}
