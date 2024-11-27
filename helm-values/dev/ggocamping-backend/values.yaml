@@ -72,3 +72,11 @@ volumeMounts: []
 # - name: cm-vol
 #   mountPath: /tmp/cm-vol
 #   readOnly: true
+
+secrets:
+  - name: aws-rds-db-credentials
+    keys: ["DB_USER", "DB_HOST", "DB_PASSWORD", "DB_PORT"]
+
+configs:
+  - name: camping-backend-cm
+    keys: ["PROXY"]
