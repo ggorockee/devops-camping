@@ -1,0 +1,74 @@
+# Default values for ggocamping-backend.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ''
+fullnameOverride: ''
+###
+### deployment
+deployment:
+  replicaCount: 1
+  autoscaling:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 3
+    targetCPUUtilizationPercentage: 80
+    targetMemoryUtilizationPercentage: 80
+  podAnnotations: {}
+  podLabels: {}
+  image:
+    repository: ggorockee/camping-backend-with-go
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: v-a8ab144d
+  imagePullSecrets: []
+  podSecurityContext: {}
+  # fsGroup: 2000
+
+  securityContext: {}
+  livenessProbe:
+    httpGet:
+      path: /v1/healthcheck
+      port: fiber
+  readinessProbe:
+    httpGet:
+      path: /v1/healthcheck
+      port: fiber
+  resources: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+###
+### serviceAccount
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Automatically mount a ServiceAccount's API credentials?
+  automount: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+service:
+  type: ClusterIP
+  ports:
+    - port: 3000
+      containerPort: 3000
+      name: fiber
+      protocol: ''
+# Additional volumes on the output Deployment definition.
+volumes: []
+# - name: foo
+#   secret:
+#     secretName: mysecret
+#     optional: false
+
+# Additional volumeMounts on the output Deployment definition.
+volumeMounts: []
+# - name: secret-vol
+#   mountPath: /tmp/secret-vol
+#   readOnly: true
+# - name: cm-vol
+#   mountPath: /tmp/cm-vol
+#   readOnly: true

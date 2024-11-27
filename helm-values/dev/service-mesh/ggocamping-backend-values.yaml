@@ -1,0 +1,19 @@
+name: ggocamping-backend
+hosts:
+- api.dev.ggocamping.com
+
+gatewayPort:
+  - number: 80
+    name: http
+    protocol: HTTP
+
+virtualService:
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: ggocamping-backend
+        port:
+          number: 3000

@@ -1,0 +1,8 @@
+appname: ggocamping-backend
+project: application
+namespace: ggocamping-backend
+repoURL: https://chart.ggocamping.com/devopscharts
+chartName: istio-gateway
+chartVersion: 1.0.0
+env: dev
+ref: ggocamping-backend
