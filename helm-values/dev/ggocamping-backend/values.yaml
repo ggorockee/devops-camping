@@ -75,7 +75,7 @@ volumeMounts: []
 
 secrets:
   - name: aws-rds-db-credentials
-    keys: ["DB_USER", "DB_HOST", "DB_PASSWORD", "DB_PORT"]
+    keys: ["DB_USER", "DB_HOST", "DB_PASSWORD", "DB_PORT", "DB_NAME"]
 
 configs:
   - name: camping-backend-cm
