@@ -20,7 +20,7 @@ deployment:
     repository: ggorockee/camping-backend-with-go
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
-    tag: v-a8ab144d
+    tag: v-4d5f817f
   imagePullSecrets: []
   podSecurityContext: {}
   # fsGroup: 2000
@@ -76,7 +76,6 @@ volumeMounts: []
 secrets:
   - name: aws-rds-db-credentials
     keys: ["DB_USER", "DB_HOST", "DB_PASSWORD", "DB_PORT", "DB_NAME"]
-
 configs:
   - name: camping-backend-cm
     keys: ["PROXY"]
