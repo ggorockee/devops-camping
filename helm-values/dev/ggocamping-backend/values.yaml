@@ -20,7 +20,7 @@ deployment:
     repository: ggorockee/camping-backend-with-go
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
-    tag: v-398a8227
+    tag: v-3c30d350
   imagePullSecrets: []
   podSecurityContext: {}
   # fsGroup: 2000
